@@ -3,6 +3,13 @@
     min-height: 100vh;
  
 }
+
+.title{
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
 .banner{
     position: relative;
     width: 100%;

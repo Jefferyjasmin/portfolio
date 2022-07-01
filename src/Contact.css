@@ -1,0 +1,48 @@
+.contact{
+    background:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contactForm {
+    position: relative;
+    width:700px ;
+    margin-top: 20px;
+}
+
+.contact .contactForm .row{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.contact .contactForm .row .col50{
+    width: 50%;
+    margin: 10px;
+}
+
+.contact .contactForm .row .col100 {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+.contact .contactForm .row input, 
+.contact .contactForm .row textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background:#111;
+    margin: 10px;
+    font-size: 16px;
+    text-align: start;
+   
+}
+
+.submitBtn, .contact {
+    color: gray;
+    text-align: center !important;
+}

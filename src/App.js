@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Banner from "./Banner";
+import Contact from "./Contact";
 import Services from "./Services";
 import SideBar from "./SideBar";
 import Toggle from "./Toggle";
@@ -19,6 +20,7 @@ function App() {
       <SideBar toggleMenu={toggleMenu} toggle={toggle} />
       <Services />
       <Work />
+      <Contact />
     </div>
   );
 }
