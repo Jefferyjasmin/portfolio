@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Banner from "./Banner";
+import Services from "./Services";
+import SideBar from "./SideBar";
+import Toggle from "./Toggle";
+import Work from "./Work";
 
 function App() {
+  const [toggle, setToggle] = useState("");
+  let toggleMenu = () => {
+    if (toggle === "") {
+      setToggle("active");
+    } else setToggle("");
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <Toggle toggleMenu={toggleMenu} toggle={toggle} />
+      <SideBar toggleMenu={toggleMenu} toggle={toggle} />
+      <Services />
+      <Work />
     </div>
   );
 }

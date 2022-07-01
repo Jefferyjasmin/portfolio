@@ -1,0 +1,55 @@
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.work .content .workBx{
+    position: relative;
+    width: 265px;
+    height: 265px;
+    margin:10px;
+    transition: 0.5s;
+    text-align: center;
+
+}
+
+.work .content .workBx .imgBx .textBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .content .workBx .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.work .content .workBx .textBx{
+    background: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.work .content .workBx:hover .textBx{
+
+    opacity: 1;
+}
+
+.work .content .workBx h3{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+    font-size: 1em;
+}
