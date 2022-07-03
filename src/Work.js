@@ -35,9 +35,8 @@ const Work = () => {
               </a>
             </button>
             <button
-              className={`${toggle}`}
+              className={`${toggle} Mobile`}
               onClick={(e) => lightOrDark()}
-              style={{ position: "fixed", left: "93%" }}
             >
               {bgd === "Dark" ? "DarkMode" : "LightMode"}
             </button>
