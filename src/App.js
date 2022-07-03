@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Banner from "./Banner";
 import Contact from "./Contact";
@@ -14,14 +15,16 @@ function App() {
     } else setToggle("");
   };
   return (
-    <div className="App">
-      <Banner />
-      <Toggle toggleMenu={toggleMenu} toggle={toggle} />
-      <SideBar toggleMenu={toggleMenu} toggle={toggle} />
-      <Services />
-      <Work />
-      <Contact />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Banner />} />
+        </Routes>
+        <Routes>
+          <Route path="/work" element={<Work />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

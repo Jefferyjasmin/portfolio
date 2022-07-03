@@ -10,23 +10,19 @@ const SideBar = ({ toggleMenu, toggle }) => {
             Home
           </a>
         </li>
+
         <li>
-          <a href="#" onClick={(e) => toggleMenu()}>
-            About
-          </a>
-        </li>
-        <li>
-            <a href="#" onClick={(e) => toggleMenu()}>
+          <a href="#services" onClick={(e) => toggleMenu()}>
             Services
           </a>
         </li>
         <li>
-          <a href="#" onClick={(e) => toggleMenu()}>
+          <a href="#work" onClick={(e) => toggleMenu()}>
             Work
           </a>
         </li>
         <li>
-          <a href="#" onClick={(e) => toggleMenu()}>
+          <a href="#contacts" onClick={(e) => toggleMenu()}>
             Contact
           </a>
         </li>

@@ -1,63 +1,40 @@
-.work .content{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
+ .Dark{
+  background: black;
+  color: white;
+ }
 .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.title p{
+  max-width: 70%;
+}
 
-.work .content .workBx{
-    position: relative;
-    width: 265px;
-    height: 265px;
-    margin:10px;
-    transition: 0.5s;
-    text-align: center;
+.container{
+display: flex;
+flex-direction: column;
+}
+
+.project{
+margin-top: 10px;
+margin-bottom: 20px;
+display: flex;
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+}
+.nav_bar_container{
+  margin-top: -46px;
+  display: flex;
+  width: 100%;
 
 }
 
-.work .content .workBx .imgBx .textBx{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #111;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.work .content .workBx .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+/* https: //discord-clone-f4d6f.firebaseapp.com/ */
 
-.work .content .workBx .textBx{
-    background: black;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.work .content .workBx:hover .textBx{
-
-    opacity: 1;
-}
-
-.work .content .workBx h3{
-    color: white;
-    text-transform: uppercase;
-    letter-spacing:1px ;
-    font-size: 1em;
-}
+/* https: //airbnb-clone-bd9ea.firebaseapp.com/ */

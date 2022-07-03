@@ -1,69 +1,169 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Work.css";
-
+import project1 from "./project/devconnect.png";
+import chatbox from "./project/chatapp.png";
+import AirBnb from "./project/AirBnb.png";
+import Contact from "./Contact";
+import Banner from "./Banner";
 const Work = () => {
+  const [bgd, setBgd] = useState("Dark");
+  const [toggle, setToggle] = useState("");
+  useEffect(() => {
+    if (bgd === "Dark") {
+      setToggle("btn btn-dark");
+    } else {
+      setToggle("btn btn-primary");
+    }
+  }, [bgd]);
+  let lightOrDark = () => {
+    if (bgd === "Dark") {
+      setBgd("");
+      setToggle("btn btn-primary");
+    } else {
+      setBgd("Dark");
+      setToggle("btn btn-dark");
+    }
+  };
   return (
-    <section className="work" id="work">
+    <div className={`work ${bgd}`} id="/work">
       <div className="title">
-        <h2> RENT WORK</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor fugit
-          ipsa dolores eius odio a. Quas voluptatibus sapiente fugit numquam
-          culpa quod ex necessitatibus aliquid, distinctio placeat, ratione
-          voluptatem tempora.
-        </p>
+        <div className="navbar">
+          <div className="nav_bar_container">
+            <button className={`${toggle}`}>
+              <a style={{ textDecoration: "none", color: "white" }} href="/">
+                Home
+              </a>
+            </button>
+            <button
+              className={`${toggle}`}
+              onClick={(e) => lightOrDark()}
+              style={{ position: "fixed", left: "93%" }}
+            >
+              {bgd === "Dark" ? "DarkMode" : "LightMode"}
+            </button>
+          </div>
+        </div>
+        <h2> RECNT WORK</h2>
+        <p>Here are a few projects that I have worked on</p>
       </div>
-      <div className="content">
-        <div className="workBx">
-          <div className="imgBx">
-            <img src="#" alt="" />
+      <div className="container">
+        <div className="project">
+          <div className={`left ${bgd}`}>
+            <h4>Developer Connect</h4>
+            <img
+              src={project1}
+              alt=""
+              style={{ height: "244px", width: "356px", objectFit: "cover" }}
+            />
+            <div className="middle" style={{ display: "flex" }}>
+              <h2>Tech stack</h2>
+              <ul>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>node.js</li>
+                <li>React</li>
+                <li>Mongodb</li>
+              </ul>
+            </div>
           </div>
-          <div className="textBx">
-            <h3>Project 01</h3>
+
+          <div className={`right ${bgd}`}>
+            <h2>
+              <a href="https://murmuring-thicket-98899.herokuapp.com/">
+                Live Link to project
+              </a>
+            </h2>
+            <h2>
+              <a href="https://github.com/Jefferyjasmin/mentorship">
+                GitHub Link
+              </a>
+            </h2>
+            <p>
+              This a project I started to connect new developers to sr
+              developers in an attempt to help developers like my self to find
+              mentors to help each other down the path of becoming a developer
+              and possible avoid making some mistakes
+            </p>
           </div>
         </div>
-        <div className="workBx">
-          <div className="imgBx">
-            <img src="#" alt="" />
+        <div className="project">
+          <div className={`left ${bgd}`}>
+            <h4>The Chat Box</h4>
+            <img
+              src={chatbox}
+              alt=""
+              style={{ height: "244px", width: "356px", objectFit: "cover" }}
+            />
+            <div className="middle" style={{ display: "flex" }}>
+              <h2>Tech stack</h2>
+              <ul>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>node.js</li>
+                <li>React</li>
+                <li>firebase</li>
+              </ul>
+            </div>
           </div>
-          <div className="textBx">
-            <h3>Project 01</h3>
+          <div className={`right ${bgd}`}>
+            <h2>
+              <a href="https://discord-clone-f4d6f.web.app/">
+                Live Link to project
+              </a>
+            </h2>
+            <h2>
+              <a href="https://github.com/Jefferyjasmin/discord-clone">
+                GitHub Link
+              </a>
+            </h2>
+
+            <p>
+              Here is a full stack application where you can create you own
+              chart room chat with friends and family and I did use firebase
+            </p>
           </div>
         </div>
-        <div className="workBx">
-          <div className="imgBx">
-            <img src="#" alt="" />
+        <div className="project">
+          <div className={`left ${bgd}`}>
+            <h4>AirBnb Clone</h4>
+            <img
+              src={AirBnb}
+              alt=""
+              style={{ height: "244px", width: "356px", objectFit: "cover" }}
+            />
+            <div className="middle" style={{ display: "flex" }}>
+              <h2>Tech stack</h2>
+              <ul>
+                <li>JavaScript</li>
+                <li>Express</li>
+                <li>node.js</li>
+                <li>React</li>
+                <li>firebase</li>
+              </ul>
+            </div>
           </div>
-          <div className="textBx">
-            <h3>Project 02</h3>
-          </div>
-        </div>
-        <div className="workBx">
-          <div className="imgBx">
-            <img src="#" alt="" />
-          </div>
-          <div className="textBx">
-            <h3>Project 03</h3>
-          </div>
-        </div>
-        <div className="workBx">
-          <div className="imgBx">
-            <img src="#" alt="" />
-          </div>
-          <div className="textBx">
-            <h3>Project 04</h3>
-          </div>
-        </div>
-        <div className="workBx">
-          <div className="imgBx">
-            <img src="#" alt="" />
-          </div>
-          <div className="textBx">
-            <h3>Project 05</h3>
+          <div className={`right ${bgd}`}>
+            <h2>
+              <a href="https://airbnb-clone-bd9ea.firebaseapp.com/">
+                Live Link to project
+              </a>
+            </h2>
+            <h2>
+              <a href="https://github.com/Jefferyjasmin/airbnbclone">
+                GitHub Link
+              </a>
+            </h2>
+            <p>
+              this is a front-end project where I re-created AirBnb my verison
+              of the their landing page this site being so popular it was alot
+              of fun
+            </p>
           </div>
         </div>
       </div>
-    </section>
+      <div className="div" style={{ height: "75px", background: "#111" }}></div>
+      <Contact bgd={bgd} lightOrDark={lightOrDark} />
+    </div>
   );
 };
 

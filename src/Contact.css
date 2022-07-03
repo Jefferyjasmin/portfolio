@@ -4,7 +4,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh
 }
+
+
 
 .contact .contactForm {
     position: relative;
@@ -12,12 +15,7 @@
     margin-top: 20px;
 }
 
-.contact .contactForm .row{
-    display: flex;
-    justify-content: center;
-   
-}
-
+ 
 .contact .contactForm .row .col50{
     width: 50%;
     margin: 10px;
@@ -39,10 +37,24 @@
     margin: 10px;
     font-size: 16px;
     text-align: start;
-   
+   color: #fff;
+   resize: none;
+}
+.contact .contactForm .row textarea {
+    height: 100px;
+}
+.contact .contactForm .row input[type="submit"]{
+background: #00bcd4;
+color: #fff;
+padding: 10px 30px;
+text-align: center !important;
+text-decoration: none;
+font-weight: 500;
+cursor: pointer;
+max-width: 150px;
+  
 }
 
-.submitBtn, .contact {
-    color: gray;
-    text-align: center !important;
-}
+
+
+ 
