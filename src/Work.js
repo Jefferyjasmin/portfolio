@@ -143,9 +143,7 @@ const Work = () => {
           </div>
           <div className={`right ${bgd}`}>
             <h2>
-              <a href="https://airbnb-clone-bd9ea.firebaseapp.com/">
-                Live Link to project
-              </a>
+              <a href="https://clone-9a863.web.app/">Live Link to project</a>
             </h2>
             <h2>
               <a href="https://github.com/Jefferyjasmin/airbnbclone">
