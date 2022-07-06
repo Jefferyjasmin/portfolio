@@ -27,7 +27,7 @@ const Contact = ({ bgd, lightOrDark }) => {
   };
   return (
     <div className="contact" id="contacts">
-      <div className="title" style={{ color: "white" }}>
+      <div className="contact_title" style={{ color: "white" }}>
         <h2>Contact Me</h2>
         <p>
           Thank you for taking the time to review my porfolio ,I hope you
@@ -40,7 +40,7 @@ const Contact = ({ bgd, lightOrDark }) => {
         id="contact-form"
         onSubmit={sendEmail}
       >
-        <div className="row">
+        <div className="contact_input">
           <div className="col50">
             <input type="text" name="Firstname" placeholder="First Name" />
           </div>
@@ -48,7 +48,7 @@ const Contact = ({ bgd, lightOrDark }) => {
             <input type="text" name="Lastname" placeholder="Last Name" />
           </div>
         </div>
-        <div className="row">
+        <div className="contact_input">
           <div className="col50">
             <input type="text" name="email" placeholder="Email" />
           </div>
@@ -56,14 +56,19 @@ const Contact = ({ bgd, lightOrDark }) => {
             <input type="number" name="Mobile" placeholder="Mobile No." />
           </div>
         </div>
-        <div className="row">
+        <div className="contact_input">
           <div className="col100">
             <textarea name="message" placeholder="Message"></textarea>
           </div>
         </div>
-        <div className="row">
+        <div className="contact_input">
           <div className="col100">
-            <input className="btn btn-primary" type="submit" value="send" />
+            <input
+              style={{ textAlign: "center" }}
+              className="btn btn-primary"
+              type="submit"
+              value="send"
+            />
           </div>
         </div>
       </form>
