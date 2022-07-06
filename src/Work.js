@@ -1,4 +1,4 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Work.css";
 import project1 from "./project/devconnect.png";
 import chatbox from "./project/chatapp.png";
@@ -70,15 +70,14 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               </a>
             </h2>
             <p>
-              This a project I started to connect new developers to sr
-              developers in an attempt to help developers like my self to find
-              mentors to help each other down the path of becoming a developer
-              and possible avoid making some mistakes
+              This a project I started to connect new developers to sr.
+              developers. in an attempt to help developers like my self to find
+              mentors to help each other down the path of becoming a developer.
             </p>
           </div>
         </div>
 
-        <div className="project">
+        {/* <div className="project">
           <div className={`left ${bgd}`}>
             <h4>The Chat Box</h4>
             <img
@@ -117,10 +116,11 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
 
             <p>
               Here is a fullstack application where you can create you own chart
-              room chat with friends and/or family and I did use firebase
+              room chat with friends and/or family and I did use firebase for
+              hosting.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="project">
           <div className={`left ${bgd}`}>
@@ -159,9 +159,8 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               </a>
             </h2>
             <p>
-              this is a front-end project where I re-created AirBnb my verison
-              of the their landing page this site being so popular it was alot
-              of fun
+              this is a front-end project where I re-created AirBnb's landing
+              page this site being so popular it was alot of fun
             </p>
           </div>
         </div>

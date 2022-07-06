@@ -8,18 +8,18 @@ const Banner = ({ bgd }) => {
       <div className="dark-overlay landing-inner ">
         <div className="containers">
           <div className={`banner_left `}>
-            <div className={`banner_content  `}>
+            <div className={`banner_content `}>
               <h2>Software Engineer</h2>
-              <h3 className={`left_content  `}>
-                Hi, My name is jeffery jasmin
+              <h3 className={`left_content `}>
+                Hi, My name is Jeffery Jasmin
                 <p style={{ marginTop: "20px", fontSize: "1rem" }}>
                   I create interfaces and experiences, love solving real world
                   problems, while bringing ideas to UI
                 </p>
               </h3>{" "}
-              <span>Front End Develpoment</span> /
-              <span>Back End Develpoment</span> /
-              <span>FullStack Develpoment</span>
+              <span>Front End Develpoment |</span>
+              <span> Back End Develpoment |</span>
+              <span> FullStack Develpoment</span>
               <div className="banner_right">
                 {/* <button className="btn btn-primary profiles">
                   <a
