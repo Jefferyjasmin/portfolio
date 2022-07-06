@@ -1,3 +1,11 @@
+.work{
+  margin-top: 50px;
+} 
+.nav_bar_container button{
+   margin-bottom: 80px;
+}
+
+       
  .Dark{
   background: black;
   color: #ffffff;
@@ -13,7 +21,8 @@
  }
 .navbar{
   width: 100%;
-  position: fixed;
+ position: relative;
+ top: 39px;
 }
 .nav_bar_container{
   margin-top: -46px;

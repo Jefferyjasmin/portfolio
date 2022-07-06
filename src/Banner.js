@@ -2,15 +2,15 @@ import React from "react";
 
 import "./Banner.css";
 
-const Banner = () => {
+const Banner = ({ bgd }) => {
   return (
     <div className="banner">
       <div className="dark-overlay landing-inner ">
         <div className="containers">
-          <div className="left">
-            <div className="banner_content">
-              <h2 style={{ color: "white" }}> Software Engineer</h2>
-              <h3 className="left_content">
+          <div className={`banner_left `}>
+            <div className={`banner_content  `}>
+              <h2>Software Engineer</h2>
+              <h3 className={`left_content  `}>
                 Hi, My name is jeffery jasmin
                 <p style={{ marginTop: "20px", fontSize: "1rem" }}>
                   I create interfaces and experiences, love solving real world
@@ -20,7 +20,7 @@ const Banner = () => {
               <span>Front End Develpoment</span> /
               <span>Back End Develpoment</span> /
               <span>FullStack Develpoment</span>
-              <div className="right">
+              <div className="banner_right">
                 <button className="btn btn-primary profiles">
                   <a
                     href="/work"

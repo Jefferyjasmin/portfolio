@@ -25,7 +25,9 @@ margin-bottom: -50px;
 justify-content: center;
     align-items: center;
 }
-
+.banner_content h2{
+    color: white;
+}
 .banner_content span{
     color: white;
 }
@@ -37,21 +39,21 @@ justify-content: center;
 margin-left: 30px;
 font-size: 24rem;
 }
-.left{
+.banner_left{
 height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
 }
-.right button {
+.banner_right button {
     background: none
 }
 /* Buttons */
-.right button:nth-child(1){
+.banner_right button:nth-child(1){
     margin-right: auto;
 }
 /* Buttons */
-.right {
+.banner_right {
     margin-top: 50px;
     display: flex;
 }

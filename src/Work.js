@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import "./Work.css";
 import project1 from "./project/devconnect.png";
 import chatbox from "./project/chatapp.png";
 import AirBnb from "./project/AirBnb.png";
 import Contact from "./Contact";
-import Banner from "./Banner";
-const Work = () => {
-  const [bgd, setBgd] = useState("Dark");
-  const [toggle, setToggle] = useState("");
-  const [light, setLight] = useState("");
+const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
   useEffect(() => {
     if (bgd === "Dark") {
       setToggle("btn btn-dark");
@@ -18,27 +14,12 @@ const Work = () => {
       setLight("Light");
     }
   }, [bgd]);
-  let lightOrDark = () => {
-    if (bgd === "Dark") {
-      setBgd("");
-      setLight("Light");
-      setToggle("btn btn-primary");
-    } else {
-      setLight("");
-      setBgd("Dark");
-      setToggle("btn btn-dark");
-    }
-  };
+
   return (
     <div className={`work ${bgd}`} id="/work">
       <div className="work_title">
         <div className="navbar">
           <div className="nav_bar_container">
-            <button className={`${toggle}`}>
-              <a style={{ textDecoration: "none", color: "white" }} href="/">
-                Home
-              </a>
-            </button>
             <button
               className={`${toggle} Mobile`}
               onClick={(e) => lightOrDark()}
@@ -135,8 +116,8 @@ const Work = () => {
             </h2>
 
             <p>
-              Here is a full stack application where you can create you own
-              chart room chat with friends and family and I did use firebase
+              Here is a fullstack application where you can create you own chart
+              room chat with friends and/or family and I did use firebase
             </p>
           </div>
         </div>
