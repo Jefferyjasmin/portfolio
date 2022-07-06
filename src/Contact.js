@@ -30,8 +30,8 @@ const Contact = ({ bgd, lightOrDark }) => {
       <div className="contact_title" style={{ color: "white" }}>
         <h2>Contact Me</h2>
         <p>
-          Thank you for taking the time to review my porfolio ,I hope you
-          enjoied my projects
+          Thank you for taking the time to review my portfolio ,I hope you
+          enjoyed my projects
         </p>
       </div>
       <form
