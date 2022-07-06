@@ -80,7 +80,7 @@ a{
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 701px) {
 .containers{
     height: 100%;
     width: 100%;
@@ -116,5 +116,7 @@ border-color: #0d6efd;;
     color: #a9b6ed;
     width: 100%;
 }
-   
+   .banner_left{
+    width: 80%;
+   }
 }
