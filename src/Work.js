@@ -8,25 +8,30 @@ import Banner from "./Banner";
 const Work = () => {
   const [bgd, setBgd] = useState("Dark");
   const [toggle, setToggle] = useState("");
+  const [light, setLight] = useState("");
   useEffect(() => {
     if (bgd === "Dark") {
       setToggle("btn btn-dark");
+      setLight("");
     } else {
       setToggle("btn btn-primary");
+      setLight("Light");
     }
   }, [bgd]);
   let lightOrDark = () => {
     if (bgd === "Dark") {
       setBgd("");
+      setLight("Light");
       setToggle("btn btn-primary");
     } else {
+      setLight("");
       setBgd("Dark");
       setToggle("btn btn-dark");
     }
   };
   return (
     <div className={`work ${bgd}`} id="/work">
-      <div className="title">
+      <div className="work_title">
         <div className="navbar">
           <div className="nav_bar_container">
             <button className={`${toggle}`}>
@@ -42,10 +47,10 @@ const Work = () => {
             </button>
           </div>
         </div>
-        <h2> RECNT WORK</h2>
+        <h2> RECENT WORK</h2>
         <p>Here are a few projects that I have worked on</p>
       </div>
-      <div className="container">
+      <div className="work_container">
         <div className="project">
           <div className={`left ${bgd}`}>
             <h4>Developer Connect</h4>
@@ -54,7 +59,7 @@ const Work = () => {
               alt=""
               style={{ height: "244px", width: "356px", objectFit: "cover" }}
             />
-            <div className="middle" style={{ display: "flex" }}>
+            <div className="middle">
               <h2>Tech stack</h2>
               <ul>
                 <li>JavaScript</li>
@@ -68,12 +73,18 @@ const Work = () => {
 
           <div className={`right ${bgd}`}>
             <h2>
-              <a href="https://murmuring-thicket-98899.herokuapp.com/">
+              <a
+                className={`work_tag ${light}`}
+                href="https://murmuring-thicket-98899.herokuapp.com/"
+              >
                 Live Link to project
               </a>
             </h2>
             <h2>
-              <a href="https://github.com/Jefferyjasmin/mentorship">
+              <a
+                className={`work_tag ${light}`}
+                href="https://github.com/Jefferyjasmin/mentorship"
+              >
                 GitHub Link
               </a>
             </h2>
@@ -85,6 +96,7 @@ const Work = () => {
             </p>
           </div>
         </div>
+
         <div className="project">
           <div className={`left ${bgd}`}>
             <h4>The Chat Box</h4>
@@ -93,7 +105,7 @@ const Work = () => {
               alt=""
               style={{ height: "244px", width: "356px", objectFit: "cover" }}
             />
-            <div className="middle" style={{ display: "flex" }}>
+            <div className="middle">
               <h2>Tech stack</h2>
               <ul>
                 <li>JavaScript</li>
@@ -106,12 +118,18 @@ const Work = () => {
           </div>
           <div className={`right ${bgd}`}>
             <h2>
-              <a href="https://discord-clone-f4d6f.web.app/">
+              <a
+                className={`work_tag ${light}`}
+                href="https://discord-clone-f4d6f.web.app/"
+              >
                 Live Link to project
               </a>
             </h2>
             <h2>
-              <a href="https://github.com/Jefferyjasmin/discord-clone">
+              <a
+                className={`work_tag ${light}`}
+                href="https://github.com/Jefferyjasmin/discord-clone"
+              >
                 GitHub Link
               </a>
             </h2>
@@ -122,6 +140,7 @@ const Work = () => {
             </p>
           </div>
         </div>
+
         <div className="project">
           <div className={`left ${bgd}`}>
             <h4>AirBnb Clone</h4>
@@ -130,7 +149,7 @@ const Work = () => {
               alt=""
               style={{ height: "244px", width: "356px", objectFit: "cover" }}
             />
-            <div className="middle" style={{ display: "flex" }}>
+            <div className="middle">
               <h2>Tech stack</h2>
               <ul>
                 <li>JavaScript</li>
@@ -143,10 +162,18 @@ const Work = () => {
           </div>
           <div className={`right ${bgd}`}>
             <h2>
-              <a href="https://clone-9a863.web.app/">Live Link to project</a>
+              <a
+                className={`work_tag ${light}`}
+                href="https://clone-9a863.web.app/"
+              >
+                Live Link to project
+              </a>
             </h2>
             <h2>
-              <a href="https://github.com/Jefferyjasmin/airbnbclone">
+              <a
+                className={`work_tag ${light}`}
+                href="https://github.com/Jefferyjasmin/airbnbclone"
+              >
                 GitHub Link
               </a>
             </h2>

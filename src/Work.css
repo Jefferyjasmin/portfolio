@@ -1,29 +1,16 @@
  .Dark{
   background: black;
-  color: white;
- 
+  color: #ffffff;
  }
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.title p{
-  max-width: 70%;
-}
- 
-.container{
-display: flex;
-flex-direction: column;
-}
-
-.project{
-margin-top: 10px;
-margin-bottom: 20px;
-display: flex;
-}
-
+ .Light{
+  color: black;
+ }
+ .work_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
 .navbar{
   width: 100%;
   position: fixed;
@@ -33,20 +20,59 @@ display: flex;
   display: flex;
   width: 100%;
   justify-content: space-between;
-
 }
 
-@media (max-width:830px ) {
+.work_container{
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
 .project{
-  margin-top: 10px;
-    margin-bottom: 20px;
-    display: flex;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.left{
+      display: flex;
+        flex-direction: column;
+        width: 50%;
+}
+.right{
+  display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 40%;
 }
-.Mobile{
-  left:84%
+
+.right p{
+    width: 75%;
+    }
+
+.middle ul{
+  display: flex;
 }
+.middle ul> li{
+  list-style: none;
+  margin-right: 5px;
+}
+@media (max-width:810px ) {
+  .project{
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+    flex-direction: column-reverse;
+  }
+ .left {
+    display: flex;
+    flex-direction: column-reverse;
+    width: auto;
+ }
+
+ .right{
+  align-items: center;
+  width: auto;
+ }
+
+
 }
 /* https: //discord-clone-f4d6f.firebaseapp.com/ */
 

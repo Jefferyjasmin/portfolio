@@ -17,11 +17,11 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
+        {/* <Routes>
           <Route path="/" element={<Banner />} />
-        </Routes>
+        </Routes> */}
         <Routes>
-          <Route path="/work" element={<Work />} />
+          <Route path="/" element={<Work />} />
         </Routes>
       </div>
     </Router>
