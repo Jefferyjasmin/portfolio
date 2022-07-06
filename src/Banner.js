@@ -21,7 +21,7 @@ const Banner = ({ bgd }) => {
               <span>Back End Develpoment</span> /
               <span>FullStack Develpoment</span>
               <div className="banner_right">
-                <button className="btn btn-primary profiles">
+                {/* <button className="btn btn-primary profiles">
                   <a
                     href="/work"
                     style={{ textDecoration: "none" }}
@@ -30,7 +30,7 @@ const Banner = ({ bgd }) => {
                     {" "}
                     Profile
                   </a>
-                </button>
+                </button> */}
                 <button className="Resume btn btn-primary ">
                   <a
                     href="https://drive.google.com/file/d/16YHVmxvZxFOCmKkZ9LEVhvonZ8Jsgtn2/view?usp=sharing"
