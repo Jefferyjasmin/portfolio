@@ -5,7 +5,9 @@
    margin-bottom: 80px;
 }
 
-       
+.work_title{
+  border-bottom: 2px solid;
+}
  .Dark{
   background: black;
   color: #ffffff;
@@ -53,8 +55,9 @@
   display: flex;
     flex-direction: column;
     width: 40%;
+    
 }
-
+ 
 .right p{
     width: 75%;
     }
@@ -66,12 +69,45 @@
   list-style: none;
   margin-right: 5px;
 }
+
+.project:nth-child(2){
+  flex-direction: row-reverse;
+}
+
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+@media (min-width:810px) {
+  .rightSecond {
+      text-align: end;
+      text-align: center;
+      justify-content: end;
+      margin-left: 145px;
+    }
+}
+
 @media (max-width:810px ) {
   .project{
     flex-direction: column;
     border-bottom: 1px solid gray;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
+
+  .project:nth-child(2){
+      flex-direction: column;
+        border-bottom: 1px solid gray;
+        flex-direction: column;
+  }
+
  .left {
     display: flex;
     flex-direction: column-reverse;
@@ -80,9 +116,30 @@
 
  .right{
   align-items: center;
-  width: auto;
+width: 63% !important;
  }
 
+
+}
+
+@keyframes SlideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 
 }
 /* https: //discord-clone-f4d6f.firebaseapp.com/ */

@@ -4,7 +4,12 @@ import project1 from "./project/devconnect.png";
 import chatbox from "./project/chatapp.png";
 import AirBnb from "./project/AirBnb.png";
 import Contact from "./Contact";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   useEffect(() => {
     if (bgd === "Dark") {
       setToggle("btn btn-dark");
@@ -32,7 +37,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
         <p>Here are a few projects that I have worked on</p>
       </div>
       <div className="work_container">
-        <div className="project">
+        <div data-aos="flip-down" className="project">
           <div className={`left ${bgd}`}>
             <h4>Developer Connect</h4>
             <img
@@ -57,6 +62,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <a
                 className={`work_tag ${light}`}
                 href="https://murmuring-thicket-98899.herokuapp.com/"
+                target="_blank"
               >
                 Live Link to project
               </a>
@@ -65,6 +71,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <a
                 className={`work_tag ${light}`}
                 href="https://github.com/Jefferyjasmin/mentorship"
+                target="_blank"
               >
                 GitHub Link
               </a>
@@ -122,7 +129,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
           </div>
         </div> */}
 
-        <div className="project">
+        <div data-aos="flip-left" className="project">
           <div className={`left ${bgd}`}>
             <h4>AirBnb Clone</h4>
             <img
@@ -141,11 +148,12 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               </ul>
             </div>
           </div>
-          <div className={`right ${bgd}`}>
+          <div className={`right ${bgd} rightSecond`}>
             <h2>
               <a
                 className={`work_tag ${light}`}
                 href="https://clone-9a863.web.app/"
+                target="_blank"
               >
                 Live Link to project
               </a>
@@ -154,6 +162,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <a
                 className={`work_tag ${light}`}
                 href="https://github.com/Jefferyjasmin/airbnbclone"
+                target="_blank"
               >
                 GitHub Link
               </a>

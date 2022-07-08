@@ -39,12 +39,16 @@ justify-content: center;
 margin-left: 30px;
 font-size: 24rem;
 text-shadow:  70px 64px 5px #5c76ccdb;
+
+animation: SlideInFromTop 1s ease-in;
+
 }
 .banner_left{
 height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+ 
 }
 .banner_right button {
     background: none
@@ -78,8 +82,49 @@ a{
          width: 500px;
     }
 
+/* animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
 
+    100% {
+        transform: translateX(0);
+    }
+}
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes SlideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes SlideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+/* animation */
 @media (max-width: 701px) {
 .containers{
     height: 100%;
