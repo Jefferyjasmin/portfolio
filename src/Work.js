@@ -49,10 +49,14 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <h2>Tech stack</h2>
               <ul>
                 <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
                 <li>Express</li>
                 <li>node.js</li>
-                <li>React</li>
+                <li>ES6</li>
                 <li>Mongodb</li>
+                <li>mobile-responsive</li>
               </ul>
             </div>
           </div>
@@ -77,9 +81,9 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               </a>
             </h2>
             <p>
-              This a project I started to connect new developers to sr.
-              developers. in an attempt to help developers like my self to find
-              mentors to help each other down the path of becoming a developer.
+              In this project user can create profiles , login and out , create
+              comments like another users comments and more. this project is
+              designed to connect Developer and exchange ideas and trips.
             </p>
           </div>
         </div>
@@ -141,10 +145,11 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <h2>Tech stack</h2>
               <ul>
                 <li>JavaScript</li>
-                <li>Express</li>
-                <li>node.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>React</li>
                 <li>firebase</li>
+                <li>mobile-responsive</li>
               </ul>
             </div>
           </div>
@@ -168,8 +173,9 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               </a>
             </h2>
             <p>
-              this is a front-end project where I re-created AirBnb's landing
-              page this site being so popular it was alot of fun
+              In this front-end project , I choose to re-create Airbnb to
+              excersize more of my css skill and adopt modern practices, I hope
+              you enjoy
             </p>
           </div>
         </div>
