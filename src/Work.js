@@ -1,8 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Work.css";
 import project1 from "./project/devconnect.png";
 import chatbox from "./project/chatapp.png";
 import AirBnb from "./project/AirBnb.png";
+import goalapp1 from "./project/goalapp1.png";
+import goalapp2 from "./project/goalapp2.png";
+import goalapp3 from "./project/goalapp3.png";
 import Contact from "./Contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,6 +22,15 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
       setLight("Light");
     }
   }, [bgd]);
+
+  const goalImages = [goalapp1, goalapp2, goalapp3];
+ 
+  const goalImagesSwipes = (goalImages) => {
+    return goalImages[0];
+  };
+  /// start 0 right left count up
+
+  console.log("this is the picture ", goalImagesSwipes(goalImages));
 
   return (
     <div className={`work ${bgd}`} id="/work">
@@ -75,6 +87,57 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <a
                 className={`work_tag ${light}`}
                 href="https://github.com/Jefferyjasmin/mentorship"
+                target="_blank"
+              >
+                GitHub Link
+              </a>
+            </h2>
+            <p>
+              In this project user can create profiles , login and out , create
+              comments like another users comments and more. this project is
+              designed to connect Developer and exchange ideas and trips.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="flip-right" className="project">
+          <div className={`left ${bgd}`}>
+            <h4>GOAL APP</h4>
+            <img
+              src={goalImagesSwipes(goalImages)}
+              alt=""
+              style={{ height: "244px", width: "356px", objectFit: "cover" }}
+            />
+            <div className="middle">
+              <h2>Tech stack</h2>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>node.js</li>
+                <li>ES6</li>
+                <li>Mongodb</li>
+                <li>mobile-responsive</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className={`right ${bgd}`}>
+            <h2>
+              <a
+                className={`work_tag ${light}`}
+                href="https://jefferygoalapp.herokuapp.com/"
+                target="_blank"
+              >
+                Live Link to project
+              </a>
+            </h2>
+            <h2>
+              <a
+                className={`work_tag ${light}`}
+                href="https://github.com/Jefferyjasmin/jefferygoalapp"
                 target="_blank"
               >
                 GitHub Link
