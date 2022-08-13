@@ -13,7 +13,7 @@
 
 .contact .contactForm {
     position: relative;
-    width:700px ;
+
     margin-top: 20px;
 }
 .contact_input{
@@ -71,7 +71,7 @@ max-width: 150px;
             width: 100%;
         }
     .contact_input input[type=submit], textarea{
-        width: 70% !important;
+        width: 100% !important;
     }
 }
 

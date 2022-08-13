@@ -99,26 +99,20 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <div className="middle">
                 <div className="middleContent">
                   <h2>Description</h2>
-                  <p>
+                  <p className="middleContent_P">
                     In this project user can create profiles , login and out ,
                     create comments like another users comments and more. this
                     project is designed to connect Developer, exchange ideas and
                     helpful tips.
                   </p>
-                  <div
-                    className="middleContentLinks"
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      paddingBottom: "20px",
-                    }}
-                  >
+                  <div className="middleContentLinks">
                     <a
                       className={`work_tag ${light}`}
                       href="https://murmuring-thicket-98899.herokuapp.com/"
                       target="_blank"
+                      style={{ marginRight: "13px" }}
                     >
-                      <TbFileSymlink style={{ marginRight: "15px" }} />
+                      <TbFileSymlink style={{ marginRight: "3px" }} />
                       Live Link to project
                     </a>
                     <a
@@ -126,7 +120,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
                       href="https://github.com/Jefferyjasmin/mentorship"
                       target="_blank"
                     >
-                      <BsGithub style={{ marginRight: "15px" }} /> GitHub-Link
+                      <BsGithub style={{ marginRight: "3px" }} /> GitHub-Link
                     </a>
                   </div>
                   <button className=" btn btn-primary projectButton">
@@ -154,33 +148,28 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <div className="middle">
                 <div className="middleContent">
                   <h2>Description</h2>
-                  <p>
+                  <p className="middleContent_P">
                     In this project user can create profiles , login and out ,
                     create future goals , with protected routes. this is full
                     stack applications
                   </p>
-                  <div
-                    className="middleContentLinks"
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      paddingBottom: "20px",
-                    }}
-                  >
+                  <div className="middleContentLinks">
                     <a
                       className={`work_tag ${light}`}
                       href="https://jefferygoalapp.herokuapp.com/login"
                       target="_blank"
+                      style={{ marginRight: "13px" }}
                     >
-                      <TbFileSymlink style={{ marginRight: "15px" }} />
+                      <TbFileSymlink style={{ marginRight: "3px" }} />
                       Live Link to project
                     </a>
                     <a
                       className={`work_tag ${light}`}
                       href="https://github.com/Jefferyjasmin/jefferygoalapp"
                       target="_blank"
+                      style={{ marginRight: "13px" }}
                     >
-                      <BsGithub style={{ marginRight: "15px" }} /> GitHub-Link
+                      <BsGithub style={{ marginRight: "3px" }} /> GitHub-Link
                     </a>
                   </div>
                   <button className=" btn btn-primary projectButton">
@@ -253,25 +242,19 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               <div className="middle">
                 <div className="middleContent">
                   <h2>Description</h2>
-                  <p>
+                  <p className="middleContent_P">
                     In this project user can create profiles , login and out ,
                     create future goals , with protected routes. this is full
                     stack applications
                   </p>
-                  <div
-                    className="middleContentLinks"
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      paddingBottom: "20px",
-                    }}
-                  >
+                  <div className="middleContentLinks">
                     <a
                       className={`work_tag ${light}`}
                       href="https://clone-9a863.web.app/"
                       target="_blank"
+                      style={{ marginRight: "13px" }}
                     >
-                      <TbFileSymlink style={{ marginRight: "15px" }} />
+                      <TbFileSymlink style={{ marginRight: "3px" }} />
                       Live Link to project
                     </a>
 
@@ -279,8 +262,9 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
                       className={`work_tag ${light}`}
                       href="https://github.com/Jefferyjasmin/airbnbclone"
                       target="_blank"
+                      style={{ marginRight: "13px" }}
                     >
-                      <BsGithub style={{ marginRight: "15px" }} /> GitHub-Link
+                      <BsGithub style={{ marginRight: "3px" }} /> GitHub-Link
                     </a>
                   </div>
                   <button className=" btn btn-primary projectButton">

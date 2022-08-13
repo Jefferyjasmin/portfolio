@@ -41,7 +41,7 @@ flex-wrap: wrap;
 position: absolute;
 background-color: rgba(0,0,0,0.7);
 color: #ffffff;
-opacity: 0;
+/* opacity: 0; */
 transition: opacity 0.35s;
 cursor: pointer;
         }
@@ -56,8 +56,16 @@ cursor: pointer;
  align-items: center; 
 
 }
+middleContentLinks{
+padding-bottom: 3px;
+}
 .middleContent p{
-  width: 70%;
+  width: 100%;
+}
+
+.middleContent_P{
+  color: white;
+  margin: 0;
 }
 .right{
   display: flex;
@@ -122,6 +130,52 @@ cursor: pointer;
 
 }
 
+@media(max-width: 1000px) {
+
+  .middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    height: 109%;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+  
+    transition: opacity 0.35s;
+    cursor: pointer;
+  }
+
+  .middleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+  }
+
+  .middleContent h2 {
+    margin-top: -49px;
+  }
+
+  .middleContent_P{
+    width: 100%;
+      color: white;
+      margin: 0;
+  }
+
+  .middelContentLinks {
+    display: flex;
+    padding-bottom: 12px;
+    justify-content: space-around;
+  }
+
+}
+
 @media (min-width:810px) {
   .rightSecond {
       text-align: end;
@@ -131,30 +185,23 @@ cursor: pointer;
     }
 }
 
-@media (max-width:810px ) {
-  .project{
-    flex-direction: column;
-    border-bottom: 1px solid gray;
-    flex-direction: column;
+@media (max-width:800px ) {
+  .middleContent h2{
+    font-size: unset;
+    text-decoration: underline;
+    padding-bottom: 2px;
   }
-
-  .project:nth-child(2){
-      flex-direction: column;
-        border-bottom: 1px solid gray;
-        flex-direction: column;
-  }
-
- .left {
-    display: flex;
-    flex-direction: column-reverse;
-    width: auto;
- }
-
- .right{
-  align-items: center;
-width: 63% !important;
- }
-
+.middleContentLinks{
+  font-size: small;
+}
+.middleContent_P {
+  margin-top: -15px;
+  padding: 0;
+ font-size: small;
+    }
+.projectButton{
+  font-size: small;
+}
 
 }
 

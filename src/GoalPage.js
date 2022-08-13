@@ -1,6 +1,7 @@
 import React from "react";
 import "./GoalPage.css";
 import { TbFileSymlink } from "react-icons/tb";
+import goalApp from "./project/goalapp2.png";
 import { BsGithub } from "react-icons/bs";
 import { SiHomebridge } from "react-icons/si";
 
@@ -13,13 +14,14 @@ const GoalPage = () => {
           <button className="goalPageTitle">Goal App</button>
           <div className="goalCardContent">
             <div className="goalCardImage">
-              <video
+              {/* <video
                 className="image"
                 src={goalDemo}
                 autoPlay
                 loop
                 muted
-              ></video>
+              ></video> */}
+              <img className="image" src={goalApp} alt="Goal app" />
             </div>
 
             <div className="goalCardInfo">
