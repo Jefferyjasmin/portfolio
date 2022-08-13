@@ -2,12 +2,82 @@
   margin-top: 50px;
 } 
 .nav_bar_container button{
-   margin-bottom: 80px;
+      position: absolute;
+        z-index: 1;
 }
 
 .work_title{
   border-bottom: 2px solid;
 }
+.project{
+  display: flex;
+}
+.projectImage{
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+     
+}
+.middle{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+top:34px;
+left:0;
+width: 100%;
+height: 93%;
+flex-wrap: wrap;
+position: absolute;
+background-color: rgba(0,0,0,0.7);
+color: #ffffff;
+opacity: 0;
+transition: opacity 0.35s;
+cursor: pointer;
+        }
+
+.middle:hover{
+  opacity: 1;
+}
+.middleContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ align-items: center; 
+
+}
+.middleContent p{
+  width: 70%;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: -10%;
+  visibility: hidden;
+  animation: ease-in 1s;
+  transition:2s;
+}
+
+
+.visible{
+  visibility: visible;
+  transition: 2ms;
+  animation: ease-in-out;
+}
+
+
+
  .Dark{
   background: black;
   color: #ffffff;
@@ -20,6 +90,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10%;
  }
 .navbar{
   width: 100%;
@@ -35,44 +106,9 @@
 
 .work_container{
   color: black;
-  display: flex;
-  flex-direction: column;
-}
-.project{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  align-items: center;
-}
-.left{
-      display: flex;
-        flex-direction: column;
-        width: 50%;
-            align-items: center;
-}
-.right{
-  display: flex;
-    flex-direction: column;
-    width: 40%;
-    
+ 
 }
  
-.right p{
-    width: 75%;
-    }
-
-.middle ul{
-  display: flex;
-}
-.middle ul> li{
-  list-style: none;
-  margin-right: 5px;
-}
-
-.project:nth-child(2){
-  flex-direction: row-reverse;
-}
 
 
 @keyframes slideInFromRight {

@@ -11,7 +11,7 @@ margin-bottom: -50px;
 }
 
 .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
+   background: linear-gradient(95deg, #554bd4, #020024);
     position: absolute;
     top: 0;
     left: 0;
@@ -38,10 +38,22 @@ justify-content: center;
 .banner_image h1{
 margin-left: 30px;
 font-size: 24rem;
-text-shadow:  70px 64px 5px #5c76ccdb;
+text-shadow: 70px 64px 5px #92a2d640;
+animation: updown 3s linear infinite;
+}
 
-animation: SlideInFromTop 1s ease-in;
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
 
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
 }
 .banner_left{
 height: 100%;

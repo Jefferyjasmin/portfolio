@@ -1,0 +1,151 @@
+.devPage{
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.devPageContainer{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ height: 100%;
+ background: black;
+}
+
+
+
+.devPageCard{
+display: flex;
+flex-direction: column;
+width: 72%;
+justify-content: center;
+}
+
+.devCardContent{
+    display: flex;
+    border: 3px solid;
+   border-radius: 5px;
+         box-shadow: inset 0 0 0.5em hsl(217deg 74% 51%), 0 0 0.5em hsl(217deg 16% 91%);
+}
+.devCardImage{
+   width: 60%;
+ height: 100%;
+}
+
+ .image{
+height: 100%;
+width: 100%;
+object-fit: cover;
+ }
+.devStack ul {
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+color: hsl(217deg 74% 51%);
+
+}
+
+.devStack ul li{
+   margin: 3px;
+
+}
+.devCardInfo{
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+.devLinks{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.dev_Link{
+   color: gray;
+}
+p{
+margin-top: 0;
+margin-bottom: 1rem;
+color: gray;
+padding: 10px;
+}
+
+.devPageTitle{
+color: hsl(217deg 74% 51%);
+background: transparent;
+border-radius: 5px;
+border: currentColor 1px solid;
+width: 50%;
+font-size: 22px;
+justify-self: center;
+align-self: center;
+margin-bottom: 48px;
+text-shadow: -1px 2px 2px currentColor, -2px 1px 0.2px black;
+box-shadow:inset 0 0 0.5em hsl(217deg 74% 51%), 0 0 0.5em hsl(217deg 74% 51%) ;
+position: relative;
+}
+
+.devPageTitle::before{
+   content: "";
+   position: absolute;
+   background:hsl(217deg 74% 51%);
+   top:120%;
+   left:0;
+   width: 100%;
+   height: 100%;
+
+   transform: perspective(1rem) rotateX(6deg) scale(1,0.35);
+   filter: blur(2rem);
+}
+
+
+
+@media (max-width:1100px) {
+   .devCardContent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+   }
+
+   .devCardImage {
+      width: 100%;
+      height: 100%;
+   }
+
+   .devCardInfo {
+      display: flex;
+      flex-direction: column;
+      width: 77%;
+   }
+}
+
+
+
+@media (max-width:604px) {
+
+   .devPageTitle {
+      font-size: smaller;
+   }
+
+   .devStack span {
+      font-size: smaller;
+   }
+
+   .devStack ul li {
+      margin: 3px;
+      font-size: x-small
+   }
+
+   p {
+      font-size: x-small
+   }
+
+   a {
+      font-size: x-small
+   }
+
+}

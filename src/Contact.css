@@ -74,3 +74,11 @@ max-width: 150px;
         width: 70% !important;
     }
 }
+
+
+@media(max-width:517px) {
+.messagebox , .send{
+width: 70% !important;
+
+}
+}

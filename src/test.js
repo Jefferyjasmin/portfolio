@@ -1,6 +1,6 @@
-let a = "john paul smith";
-
-let foo =(a)=>{
-    if occurs("",p1)
-
+ 
+let a =()=>{
+    return parseInt("1.5")
 }
+
+console.log(a)

@@ -57,12 +57,12 @@ const Contact = ({ bgd, lightOrDark }) => {
           </div>
         </div>
         <div className="contact_input">
-          <div className="col100">
+          <div className="col100 messagebox">
             <textarea name="message" placeholder="Message"></textarea>
           </div>
         </div>
         <div className="contact_input">
-          <div className="col100">
+          <div className="col100 send ">
             <input
               style={{ textAlign: "center" }}
               className="btn btn-primary"
