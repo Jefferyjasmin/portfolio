@@ -124,9 +124,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
                     </a>
                   </div>
                   <button className=" btn btn-primary projectButton">
-                    <a href="develperconnect" target="_blank">
-                      More info
-                    </a>
+                    <a href="develperconnect">More info</a>
                   </button>
                 </div>
               </div>
@@ -173,9 +171,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
                     </a>
                   </div>
                   <button className=" btn btn-primary projectButton">
-                    <a href="goal" target="_blank">
-                      More info
-                    </a>
+                    <a href="goal">More info</a>
                   </button>
                 </div>
               </div>
@@ -268,9 +264,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
                     </a>
                   </div>
                   <button className=" btn btn-primary projectButton">
-                    <a href="amazon" target="_blank">
-                      More info
-                    </a>
+                    <a href="amazon">More info</a>
                   </button>
                 </div>
               </div>
