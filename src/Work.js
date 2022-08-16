@@ -8,13 +8,14 @@ import AirBnb from "./project/AirBnb.png";
 import goalapp1 from "./project/goalapp1.png";
 import Contact from "./Contact";
 import Aos from "aos";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Banner from "./Banner";
-const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
-  const [visible, setVisible] = useState("");
+const Work = () => {
+  const [bgd, setBgd] = useState("Dark");
+  const [toggle, setToggle] = useState("");
+  const [light, setLight] = useState("");
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
@@ -28,38 +29,22 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
     }
   }, [bgd]);
 
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 2,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+  let lightOrDark = () => {
+    if (bgd === "Dark") {
+      setBgd("");
+      setLight("Light");
+      setToggle("btn btn-primary");
+    } else {
+      setLight("");
+      setBgd("Dark");
+      setToggle("btn btn-dark");
+    }
   };
 
-  const goalImages = [goalapp1];
-
-  const goalImagesSwipes = (goalImages) => {
-    return goalImages[0];
-  };
-  /// start 0 right left count up
-
-  const moreInfo = (id) => {};
   return (
     <>
       <Banner />
-      <div className={`work ${bgd}`} id="/work">
+      <div className={`work ${bgd}`}>
         <div className="work_title">
           <h2> RECENT WORK</h2>
           <p>Here are a few projects that I have worked on</p>
@@ -75,15 +60,6 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
           </div>
         </div>
         <div className="work_container">
-          {/* <Carousel
-          responsive={responsive}
-          infinite={true}
-          autoPlaySpeed={1000}
-          keyBoardControl={true}
-          customTransition="all .5"
-          transitionDuration={500}
-        > */}
-
           <div
             data-aos="flip-down"
             className="project"
@@ -93,7 +69,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               marginBottom: "3%",
             }}
           >
-            <div id="/developerconnect" className={`left ${bgd}`}>
+            <div className={`left ${bgd}`}>
               <h4>Developer Connect</h4>
               <img className="projectImage" src={project1} alt="" />
               <div className="middle">
@@ -140,7 +116,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               marginBottom: "4%",
             }}
           >
-            <div id="/goalapp" className={`left ${bgd}`}>
+            <div className={`left ${bgd}`}>
               <h4>GOAL APP</h4>
               <img className="projectImage" src={goalapp1} alt="" />
               <div className="middle">
@@ -232,7 +208,7 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               marginBottom: "3%",
             }}
           >
-            <div id="/airbnbclone" className={`left ${bgd}`}>
+            <div className={`left ${bgd}`}>
               <h4>AirBnb Clone</h4>
               <img className="projectImage" src={AirBnb} alt="" />
               <div className="middle">
@@ -318,7 +294,6 @@ const Work = ({ bgd, toggle, light, lightOrDark, setToggle, setLight }) => {
               </p>
             </div>
           </div> */}
-          {/* </Carousel> */}
         </div>
         <div
           className="div"

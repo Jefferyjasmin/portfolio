@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./Banner.css";
 
-const Banner = ({ bgd }) => {
+const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = [
@@ -15,37 +15,37 @@ const Banner = ({ bgd }) => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  // useEffect(() => {
+  //   let ticker = setInterval(() => {
+  //     tick();
+  //   }, delta);
 
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
+  //   return () => {
+  //     clearInterval(ticker);
+  //   };
+  // }, [text]);
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
+  // const tick = () => {
+  //   let i = loopNum % toRotate.length;
+  //   let fullText = toRotate[i];
+  //   let updatedText = isDeleting
+  //     ? fullText.substring(0, text.length - 1)
+  //     : fullText.substring(0, text.length + 1);
 
-    setText(updatedText);
+  //   setText(updatedText);
 
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(500);
-    }
-  };
+  //   if (isDeleting) {
+  //     setDelta((prevDelta) => prevDelta / 2);
+  //   }
+  //   if (!isDeleting && updatedText === fullText) {
+  //     setIsDeleting(true);
+  //     setDelta(period);
+  //   } else if (isDeleting && updatedText === "") {
+  //     setIsDeleting(false);
+  //     setLoopNum(loopNum + 1);
+  //     setDelta(500);
+  //   }
+  // };
 
   return (
     <div className="banner">
@@ -65,16 +65,7 @@ const Banner = ({ bgd }) => {
               <span> Back End Develpoment |</span>
               <span> FullStack Develpoment</span>
               <div className="banner_right">
-                {/* <button className="btn btn-primary profiles">
-                  <a
-                    href="/work"
-                    style={{ textDecoration: "none" }}
-                    target="_blank"
-                  >
-                    {" "}
-                    Profile
-                  </a>
-                </button> */}
+                 
                 <button className="Resume btn btn-primary ">
                   <a
                     href="https://drive.google.com/file/d/16YHVmxvZxFOCmKkZ9LEVhvonZ8Jsgtn2/view?usp=sharing"
@@ -107,7 +98,7 @@ const Banner = ({ bgd }) => {
               </div>
             </div>
 
-            {/* <button style={{ height: "10%", width: "30%" }}>MY_Profile</button> */}
+            
           </div>
           <div className="banner_image">
             <h1>J</h1>
