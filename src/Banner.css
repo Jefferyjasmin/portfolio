@@ -11,7 +11,7 @@ margin-bottom: -50px;
 }
 
 .dark-overlay {
-   background: linear-gradient(95deg, #554bd4, #020024);
+    background: linear-gradient(95deg, #266cdf, #020024);
     position: absolute;
     top: 0;
     left: 0;
