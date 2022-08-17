@@ -18,6 +18,7 @@
 
 
 .goalPageCard {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     width: 72%;
@@ -110,11 +111,15 @@ p {
     filter: blur(2rem);
 }
 
-@media (max-width:1100px) {
+@media (max-width:1280px) {
+    .goalPageCard {
+        width: 80% !important;
+    }
+
     .goalCardContent{
         flex-direction: column;
         justify-content: center;
-            align-items: center;
+        align-items: center;
 
     }
 .goalCardImage {
@@ -136,6 +141,9 @@ p {
 .goalPageTitle {
     font-size: smaller;
 }
+ .goalPageCard {
+     width: 95% !important;
+ }
 .goalStack span{
     font-size: smaller;
 }

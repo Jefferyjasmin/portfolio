@@ -18,6 +18,7 @@
 
 
 .amazonPageCard {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     width: 72%;
@@ -113,6 +114,9 @@ p {
 
 
 @media (max-width:1100px) {
+    .amazonPageCard {
+            width: 80% !important;
+        }
     .amazonCardContent {
         flex-direction: column;
         justify-content: center;
@@ -139,6 +143,9 @@ p {
     .amazonPageTitle {
         font-size: smaller;
     }
+    .amazonPageCard {
+         width: 95% !important;
+           }
 
     .amazonStack span {
         font-size: smaller;
