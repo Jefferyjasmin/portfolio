@@ -3,18 +3,37 @@ import "./Work.css";
 import { TbFileSymlink } from "react-icons/tb";
 import { BsGithub } from "react-icons/bs";
 import project1 from "./project/devconnect.png";
-import chatbox from "./project/chatapp.png";
+
 import AirBnb from "./project/AirBnb.png";
 import goalapp1 from "./project/goalapp1.png";
 import Contact from "./Contact";
 import Aos from "aos";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+
 import Banner from "./Banner";
 const Work = () => {
   const [bgd, setBgd] = useState("Dark");
   const [toggle, setToggle] = useState("");
   const [light, setLight] = useState("");
+
+  // let toggleMenu = () => {
+  //   if (toggle === "") {
+  //     setToggle("active");
+  //   } else setToggle("");
+  // };
+  let lightOrDark = () => {
+    if (bgd === "Dark") {
+      setBgd("");
+      setLight("Light");
+      setToggle("btn btn-primary");
+    } else {
+      setLight("");
+      setBgd("Dark");
+      setToggle("btn btn-dark");
+    }
+  };
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -29,22 +48,30 @@ const Work = () => {
     }
   }, [bgd]);
 
-  let lightOrDark = () => {
-    if (bgd === "Dark") {
-      setBgd("");
-      setLight("Light");
-      setToggle("btn btn-primary");
-    } else {
-      setLight("");
-      setBgd("Dark");
-      setToggle("btn btn-dark");
-    }
-  };
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 2,
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 2,
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 1,
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1,
+  //   },
+  // };
 
   return (
     <>
       <Banner />
-      <div className={`work ${bgd}`}>
+      <div className={`work ${bgd}`} id="/work">
         <div className="work_title">
           <h2> RECENT WORK</h2>
           <p>Here are a few projects that I have worked on</p>
@@ -60,6 +87,15 @@ const Work = () => {
           </div>
         </div>
         <div className="work_container">
+          {/* <Carousel
+          responsive={responsive}
+          infinite={true}
+          autoPlaySpeed={1000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={500}
+        > */}
+
           <div
             data-aos="flip-down"
             className="project"
@@ -69,7 +105,7 @@ const Work = () => {
               marginBottom: "3%",
             }}
           >
-            <div className={`left ${bgd}`}>
+            <div id="/developerconnect" className={`left ${bgd}`}>
               <h4>Developer Connect</h4>
               <img className="projectImage" src={project1} alt="" />
               <div className="middle">
@@ -116,7 +152,7 @@ const Work = () => {
               marginBottom: "4%",
             }}
           >
-            <div className={`left ${bgd}`}>
+            <div id="/goalapp" className={`left ${bgd}`}>
               <h4>GOAL APP</h4>
               <img className="projectImage" src={goalapp1} alt="" />
               <div className="middle">
@@ -153,52 +189,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          {/* section */}
 
-          {/* <div className="project">
-          <div className={`left ${bgd}`}>
-            <h4>The Chat Box</h4>
-            <img
-              src={chatbox}
-              alt=""
-              style={{ height: "244px", width: "356px", objectFit: "cover" }}
-            />
-            <div className="middle">
-              <h2>Tech stack</h2>
-              <ul>
-                <li>JavaScript</li>
-                <li>Express</li>
-                <li>node.js</li>
-                <li>React</li>
-                <li>firebase</li>
-              </ul>
-            </div>
-          </div>
-          <div className={`right ${bgd}`}>
-            <h2>
-              <a
-                className={`work_tag ${light}`}
-                href="https://discord-clone-f4d6f.web.app/"
-              >
-                Live Link to project
-              </a>
-            </h2>
-            <h2>
-              <a
-                className={`work_tag ${light}`}
-                href="https://github.com/Jefferyjasmin/discord-clone"
-              >
-                GitHub Link
-              </a>
-            </h2>
-
-            <p>
-              Here is a fullstack application where you can create you own chart
-              room chat with friends and/or family and I did use firebase for
-              hosting.
-            </p>
-          </div>
-        </div> */}
           <div
             data-aos="flip-left"
             className="project"
@@ -208,7 +199,7 @@ const Work = () => {
               marginBottom: "3%",
             }}
           >
-            <div className={`left ${bgd}`}>
+            <div id="/airbnbclone" className={`left ${bgd}`}>
               <h4>AirBnb Clone</h4>
               <img className="projectImage" src={AirBnb} alt="" />
               <div className="middle">
@@ -246,54 +237,8 @@ const Work = () => {
               </div>
             </div>
           </div>
-          {/* section */}
 
-          {/* <div data-aos="flip-left" className="project">
-            <div className={`left ${bgd}`}>
-              <h4>AirBnb Clone</h4>
-              <img
-                src={AirBnb}
-                alt=""
-                style={{ height: "244px", width: "356px", objectFit: "cover" }}
-              />
-              <div className="middle">
-                <h2>Tech stack</h2>
-                <ul>
-                  <li>JavaScript</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>React</li>
-                  <li>firebase</li>
-                  <li>mobile-responsive</li>
-                </ul>
-              </div>
-            </div>
-            <div className={`right ${bgd} rightSecond`}>
-              <h2>
-                <a
-                  className={`work_tag ${light}`}
-                  href="https://clone-9a863.web.app/"
-                  target="_blank"
-                >
-                  Live Link to project
-                </a>
-              </h2>
-              <h2>
-                <a
-                  className={`work_tag ${light}`}
-                  href="https://github.com/Jefferyjasmin/airbnbclone"
-                  target="_blank"
-                >
-                  GitHub Link
-                </a>
-              </h2>
-              <p>
-                In this front-end project , I choose to re-create Airbnb to
-                excersize more of my css skill and adopt modern practices, I
-                hope you enjoy
-              </p>
-            </div>
-          </div> */}
+          {/* </Carousel> */}
         </div>
         <div
           className="div"

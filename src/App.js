@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/amazon" element={<AmazonPage />} />
         </Routes>
         <Routes>
-          // <Route exact path="/goal" element={<GoalPage />} />
+     <Route exact path="/goal" element={<GoalPage />} />
         </Routes>
       </div>
     </Router>

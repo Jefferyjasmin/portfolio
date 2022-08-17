@@ -1,24 +1,27 @@
-.work{
+.work {
   margin-top: 50px;
-} 
-.nav_bar_container button{
-      position: absolute;
-        z-index: 1;
 }
 
-.work_title{
+.nav_bar_container button {
+  position: absolute;
+  z-index: 1;
+}
+
+.work_title {
   border-bottom: 2px solid;
 }
-.project{
+
+.project {
   display: flex;
 }
-.projectImage{
-  height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
 
-.left{
+.projectImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,59 +29,64 @@
   flex-direction: column;
   width: 50%;
   height: 100%;
-     
-}
-.middle{
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-top:34px;
-left:0;
-width: 100%;
-height: 93%;
-flex-wrap: wrap;
-position: absolute;
-background-color: rgba(0,0,0,0.7);
-color: #ffffff;
-opacity: 0;
-transition: opacity 0.35s;
-cursor: pointer;
-        }
 
-.middle:hover{
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  height: 93%;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  /* opacity: 0; */
+  transition: opacity 0.35s;
+  cursor: pointer;
+}
+
+.middle:hover {
   opacity: 1;
 }
-.middleContent{
+
+.middleContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
- align-items: center; 
+  align-items: center;
 
 }
-middleContentLinks{
-padding-bottom: 3px;
+
+.middleContentLinks {
+    padding: 10px;
 }
-.middleContent p{
+
+.middleContent p {
   width: 100%;
 }
 
-.middleContent_P{
+.middleContent_P {
   color: white;
   margin: 0;
 }
-.right{
+
+.right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: -10%;
   visibility: hidden;
   animation: ease-in 1s;
-  transition:2s;
+  transition: 2s;
 }
 
 
-.visible{
+.visible {
   visibility: visible;
   transition: 2ms;
   animation: ease-in-out;
@@ -86,37 +94,41 @@ padding-bottom: 3px;
 
 
 
- .Dark{
+.Dark {
   background: black;
   color: #ffffff;
- }
- .Light{
+}
+
+.Light {
   color: black;
- }
- .work_title{
+}
+
+.work_title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 10%;
- }
-.navbar{
-  width: 100%;
- position: relative;
- top: 39px;
 }
-.nav_bar_container{
+
+.navbar {
+  width: 100%;
+  position: relative;
+  top: 39px;
+}
+
+.nav_bar_container {
   margin-top: -46px;
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.work_container{
+.work_container {
   color: black;
- 
+
 }
- 
+
 
 
 @keyframes slideInFromRight {
@@ -145,7 +157,7 @@ padding-bottom: 3px;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     color: #ffffff;
-  
+
     transition: opacity 0.35s;
     cursor: pointer;
   }
@@ -162,10 +174,10 @@ padding-bottom: 3px;
     margin-top: -49px;
   }
 
-  .middleContent_P{
+  .middleContent_P {
     width: 100%;
-      color: white;
-      margin: 0;
+    color: white;
+    margin: 0;
   }
 
   .middelContentLinks {
@@ -176,33 +188,47 @@ padding-bottom: 3px;
 
 }
 
-@media (min-width:810px) {
+@media (min-width:970px) {
   .rightSecond {
-      text-align: end;
-      text-align: center;
-      justify-content: end;
-      margin-left: 145px;
-    }
+    text-align: end;
+    text-align: center;
+    justify-content: end;
+    margin-left: 145px;
+  }
 }
 
-@media (max-width:800px ) {
-  .middleContent h2{
+@media (max-width:960px) {
+  .middleContent h2 {
     font-size: unset;
     text-decoration: underline;
     padding-bottom: 2px;
+    margin-bottom: 18px;
   }
-.middleContentLinks{
-  font-size: small;
-}
-.middleContent_P {
-  margin-top: -15px;
-  padding: 0;
- font-size: small;
-    }
-.projectButton{
-  font-size: small;
+
+  .middleContentLinks {
+    font-size: small;
+  }
+
+  .middleContent_P {
+    margin-top: -15px;
+    padding: 0;
+    font-size: small;
+  }
+
+  .projectButton {
+    font-size: small;
+  }
+
 }
 
+@media (max-width:417px) {
+.btn-primary{
+    width: 27%;
+  height: 24px;
+  text-align: center;
+  justify-content: center;
+  display: flex; 
+}
 }
 
 @keyframes SlideInFromTop {
@@ -225,6 +251,14 @@ padding-bottom: 3px;
   }
 
 }
+
+
+
+/* width: 27%;
+height: 24px;
+text-align: center;
+justify-content: center;
+display: flex; */
 /* https: //discord-clone-f4d6f.firebaseapp.com/ */
 
 /* https: //airbnb-clone-bd9ea.firebaseapp.com/ */

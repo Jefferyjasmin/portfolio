@@ -1,5 +1,5 @@
-.contact{
-    background:black;
+.contact {
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     height: 100vh
 }
 
-.contact_title h2{
+.contact_title h2 {
     text-align: center;
 }
 
@@ -16,12 +16,13 @@
 
     margin-top: 20px;
 }
-.contact_input{
+
+.contact_input {
     display: flex;
 }
 
- 
-.contact .contactForm .contact_input .col50{
+
+.contact .contactForm .contact_input .col50 {
     width: 50%;
     margin: 10px;
 }
@@ -32,53 +33,59 @@
     text-align: center;
 }
 
-.contact .contactForm .contact_input input, 
+.contact .contactForm .contact_input input,
 .contact .contactForm .contact_input textarea {
     width: 100%;
     padding: 10px;
     border: none;
     outline: none;
-    background:#23252c;
+    background: #23252c;
     margin: 10px;
     font-size: 16px;
     text-align: start;
-   color: #fff;
-   resize: none;
+    color: #fff;
+    resize: none;
 }
+
 .contact .contactForm .row textarea {
     height: 100px;
 }
-.contact .contactForm .row input[type="submit"]{
-background: #00bcd4;
-color: #fff;
-padding: 10px 30px;
-text-align: center !important;
-text-decoration: none;
-font-weight: 500;
-cursor: pointer;
-max-width: 150px;
-  
+
+.contact .contactForm .row input[type="submit"] {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    text-align: center !important;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    max-width: 150px;
+
 }
 
 
 
-@media(max-width:745px){
+@media(max-width:745px) {
     .contact_input {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-    .contact_input input[type=submit], textarea{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contact_input input[type=submit],
+    textarea {
         width: 100% !important;
     }
 }
 
 
 @media(max-width:517px) {
-.messagebox , .send{
-width: 70% !important;
 
-}
+    .messagebox,
+    .send {
+        width: 70% !important;
+
+    }
 }

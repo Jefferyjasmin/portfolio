@@ -65,11 +65,12 @@ const Banner = () => {
               <span> Back End Develpoment |</span>
               <span> FullStack Develpoment</span>
               <div className="banner_right">
-                 
                 <button className="Resume btn btn-primary ">
                   <a
                     href="https://drive.google.com/file/d/16YHVmxvZxFOCmKkZ9LEVhvonZ8Jsgtn2/view?usp=sharing"
                     target="_blank"
+                    without
+                    rel="noreferrer"
                   >
                     {" "}
                     Resume
@@ -81,6 +82,8 @@ const Banner = () => {
                     href="https://github.com/Jefferyjasmin"
                     style={{ textDecoration: "none" }}
                     target="_blank"
+                    without
+                    rel="noreferrer"
                   >
                     Github
                   </a>
@@ -90,6 +93,8 @@ const Banner = () => {
                     href="https://www.linkedin.com/in/jefferyjasmin/"
                     style={{ textDecoration: "none", color: "white" }}
                     target="_blank"
+                    without
+                    rel="noreferrer"
                   >
                     {" "}
                     LinkedIn
@@ -97,8 +102,6 @@ const Banner = () => {
                 </button>
               </div>
             </div>
-
-            
           </div>
           <div className="banner_image">
             <h1>J</h1>
