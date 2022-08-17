@@ -67,8 +67,8 @@ const Banner = () => {
               <div className="banner_right">
                 <button className="Resume btn btn-primary ">
                   <a
-                    href="https://drive.google.com/file/d/16YHVmxvZxFOCmKkZ9LEVhvonZ8Jsgtn2/view?usp=sharing"
-                    target="_blank"
+                    href="https://drive.google.com/file/d/1vQPccEAC9yl0LmWbHJchmQtGYN4kT5JK/view?usp=sharing"
+                    https:target="_blank"
                     without
                     rel="noreferrer"
                   >
