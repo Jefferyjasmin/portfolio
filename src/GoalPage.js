@@ -44,7 +44,7 @@ const GoalPage = () => {
                 <a
                   className={`goal_Link`}
                   style={{ marginRight: "17px" }}
-                  href="https://murmuring-thicket-98899.herokuapp.com/"
+                  href="https://jefferygoalapp.herokuapp.com/login"
                   target="_blank"
                 >
                   <TbFileSymlink style={{ marginRight: "3px" }} />
@@ -53,7 +53,7 @@ const GoalPage = () => {
                 <a
                   className={`goal_Link`}
                   style={{ marginRight: "17px" }}
-                  href="https://github.com/Jefferyjasmin/mentorship"
+                  href="https://github.com/Jefferyjasmin/jefferygoalapp"
                   target="_blank"
                 >
                   <BsGithub style={{ marginRight: "2px" }} /> GitHub-Link

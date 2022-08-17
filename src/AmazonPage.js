@@ -43,16 +43,17 @@ const AmazonPage = () => {
                 <a
                   className={`amazon_Link`}
                   style={{ marginRight: "17px" }}
-                  href="https://murmuring-thicket-98899.herokuapp.com/"
+                  href="https://clone-9a863.web.app/"
                   target="_blank"
                 >
                   <TbFileSymlink style={{ marginRight: "3px" }} />
                   Live Link to project
                 </a>
+
                 <a
                   className={`amazon_Link`}
                   style={{ marginRight: "17px" }}
-                  href="https://github.com/Jefferyjasmin/mentorship"
+                  href="https://github.com/Jefferyjasmin/airbnbclone"
                   target="_blank"
                 >
                   <BsGithub style={{ marginRight: "2px" }} /> GitHub-Link
