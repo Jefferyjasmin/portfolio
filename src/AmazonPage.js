@@ -13,14 +13,13 @@ const AmazonPage = () => {
           <button className="amazonPageTitle">Developer connect</button>
           <div className="amazonCardContent">
             <div className="amazonCardImage">
-              {/* <video
+              <video
                 className="image"
                 src={Amademo}
                 autoPlay
                 loop
                 muted
-              ></video> */}
-              <img className="image" src={AirBnb} alt="Dev Connect" />
+              ></video>
             </div>
 
             <div className="amazonCardInfo">

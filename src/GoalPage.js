@@ -14,14 +14,13 @@ const GoalPage = () => {
           <button className="goalPageTitle">Goal App</button>
           <div className="goalCardContent">
             <div className="goalCardImage">
-              {/* <video
+              <video
                 className="image"
                 src={goalDemo}
                 autoPlay
                 loop
                 muted
-              ></video> */}
-              <img className="image" src={goalApp} alt="Goal app" />
+              ></video>
             </div>
 
             <div className="goalCardInfo">

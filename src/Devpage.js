@@ -13,8 +13,7 @@ const Devpage = () => {
           <button className="devPageTitle">Developer connect</button>
           <div className="devCardContent">
             <div className="devCardImage">
-              {/* <video className="image" src={demo} autoPlay loop muted></video> */}
-              <img className="image" src={project1} alt="Dev Connect" />
+              <video className="image" src={demo} autoPlay loop muted></video>
             </div>
 
             <div className="devCardInfo">
