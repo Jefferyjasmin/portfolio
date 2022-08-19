@@ -127,7 +127,7 @@ const Work = () => {
                   </p>
                   <div className="middleContentLinks">
                     <a
-                      className={`work_tag ${light}`}
+                      className={`work_tag Dark`}
                       href="https://murmuring-thicket-98899.herokuapp.com/"
                       target="_blank"
                       style={{ marginRight: "13px" }}
@@ -136,7 +136,7 @@ const Work = () => {
                       Live Link to project
                     </a>
                     <a
-                      className={`work_tag ${light}`}
+                      className={`work_tag Dark`}
                       href="https://github.com/Jefferyjasmin/mentorship"
                       target="_blank"
                     >
@@ -177,7 +177,7 @@ const Work = () => {
                   </p>
                   <div className="middleContentLinks">
                     <a
-                      className={`work_tag ${light}`}
+                      className={`work_tag Dark`}
                       href="https://jefferygoalapp.herokuapp.com/login"
                       target="_blank"
                       style={{ marginRight: "13px" }}
@@ -186,7 +186,7 @@ const Work = () => {
                       Live Link to project
                     </a>
                     <a
-                      className={`work_tag ${light}`}
+                      className={`work_tag Dark`}
                       href="https://github.com/Jefferyjasmin/jefferygoalapp"
                       target="_blank"
                       style={{ marginRight: "13px" }}
@@ -227,7 +227,7 @@ const Work = () => {
                   </p>
                   <div className="middleContentLinks">
                     <a
-                      className={`work_tag ${light}`}
+                      className={`work_tag Dark`}
                       href="https://clone-9a863.web.app/"
                       target="_blank"
                       style={{ marginRight: "13px" }}
@@ -237,7 +237,7 @@ const Work = () => {
                     </a>
 
                     <a
-                      className={`work_tag ${light}`}
+                      className={`work_tag Dark`}
                       href="https://github.com/Jefferyjasmin/airbnbclone"
                       target="_blank"
                       style={{ marginRight: "13px" }}
