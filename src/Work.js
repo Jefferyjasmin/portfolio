@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 
 import Banner from "./Banner";
 const Work = () => {
-  const [bgd, setBgd] = useState("Dark");
+  const [bgd, setBgd] = useState("light");
   const [toggle, setToggle] = useState("");
   const [light, setLight] = useState("");
 
@@ -108,10 +108,13 @@ const Work = () => {
               display: "flex",
               justifyContent: "space-around",
               marginBottom: "16%",
+              position: "relative",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
+            <h4>DEVELOPER CONNECT</h4>
             <div id="/developerconnect" className={`left ${bgd}`}>
-              <h4>DEVELOPER CONNECT</h4>
               <img className="projectImage" src={project1} alt="" />
               <div className="middle">
                 <div className="middleContent">
@@ -155,10 +158,14 @@ const Work = () => {
               display: "flex",
               justifyContent: "space-around",
               marginBottom: "16%",
+              position: "relative",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
+            {" "}
+            <h4>GOAL APP</h4>
             <div id="/goalapp" className={`left ${bgd}`}>
-              <h4>GOAL APP</h4>
               <img className="projectImage" src={goalapp1} alt="" />
               <div className="middle">
                 <div className="middleContent">
@@ -201,11 +208,14 @@ const Work = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              marginBottom: "3%",
+              marginBottom: "16%",
+              position: "relative",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
+            <h4>AIRBNB CLONE</h4>
             <div id="/airbnbclone" className={`left ${bgd}`}>
-              <h4>AIRBNB CLONE</h4>
               <img className="projectImage" src={AirBnb} alt="" />
               <div className="middle">
                 <div className="middleContent">

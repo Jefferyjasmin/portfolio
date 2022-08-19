@@ -163,15 +163,15 @@ a{
     display: flex;
     flex-direction: column;
     }
-    .left{
+    /* .left{
     margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     width: 80%;
-    }
-.right{
+    } */
+/* .right{
         align-items: center;
             margin: auto;
 }
@@ -181,7 +181,7 @@ a{
         height: auto;
         margin-left: 0;
         background:none
-    }
+    } */
 .Resume{
         margin-left: 0;
     }
