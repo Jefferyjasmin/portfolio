@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Work.css";
 import { TbFileSymlink } from "react-icons/tb";
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsLightbulb, BsLightbulbFill } from "react-icons/bs";
+
 import project1 from "./project/devconnect.png";
 
 import AirBnb from "./project/AirBnb.png";
@@ -81,7 +82,7 @@ const Work = () => {
                 className={`${toggle} Mobile`}
                 onClick={(e) => lightOrDark()}
               >
-                {bgd === "Dark" ? "DarkMode" : "LightMode"}
+                {bgd === "Dark" ? <BsLightbulb /> : <BsLightbulbFill />}
               </button>
             </div>
           </div>
