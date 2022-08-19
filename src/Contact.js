@@ -72,6 +72,11 @@ const Contact = ({ bgd, lightOrDark }) => {
           </div>
         </div>
       </form>
+      <div className="contact_button">
+        <a href="#banner" className="btn btn-dark">
+          Top of page
+        </a>
+      </div>
     </div>
   );
 };

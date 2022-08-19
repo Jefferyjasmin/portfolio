@@ -64,7 +64,12 @@
 }
 
 
-
+.contact_button{
+    display: flex;
+        justify-content: end;
+        width: 100%;
+        align-items: end;
+}
 @media(max-width:745px) {
     .contact_input {
         display: flex;

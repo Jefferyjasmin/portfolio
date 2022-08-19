@@ -48,7 +48,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="banner">
+    <div className="banner" id="banner">
       <div className="dark-overlay landing-inner ">
         <div className="containers">
           <div className={`banner_left `}>
