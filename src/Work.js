@@ -82,7 +82,11 @@ const Work = () => {
                 className={`${toggle} Mobile`}
                 onClick={(e) => lightOrDark()}
               >
-                {bgd === "Dark" ? <BsLightbulb /> : <BsLightbulbFill />}
+                {bgd === "Dark" ? (
+                  <BsLightbulbFill className="light" />
+                ) : (
+                  <BsLightbulb className="light" style={{ color: "black" }} />
+                )}
               </button>
             </div>
           </div>

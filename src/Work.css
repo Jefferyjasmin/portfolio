@@ -5,6 +5,9 @@
 .nav_bar_container button {
   position: absolute;
   z-index: 1;
+  background: transparent;
+   border: none;
+  width: 9%;
 }
 
 .work_title {
@@ -220,8 +223,16 @@
   }
 
 }
-
+@media (max-width:620px) {
+.light {
+    height: 10px;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+  }
+}
 @media (max-width:417px) {
+
 .btn-primary{
     width: 27%;
   height: 24px;
