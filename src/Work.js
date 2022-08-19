@@ -107,7 +107,7 @@ const Work = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              marginBottom: "3%",
+              marginBottom: "16%",
             }}
           >
             <div id="/developerconnect" className={`left ${bgd}`}>
@@ -154,7 +154,7 @@ const Work = () => {
             style={{
               display: "flex",
               justifyContent: "space-around",
-              marginBottom: "4%",
+              marginBottom: "16%",
             }}
           >
             <div id="/goalapp" className={`left ${bgd}`}>
@@ -247,7 +247,7 @@ const Work = () => {
         </div>
         <div
           className="div"
-          style={{ height: "75px", background: "#111" }}
+          style={{ height: "30px", background: "#111" }}
         ></div>
         <Contact bgd={bgd} lightOrDark={lightOrDark} />
       </div>
