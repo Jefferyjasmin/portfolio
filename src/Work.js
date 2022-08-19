@@ -15,7 +15,7 @@ import "aos/dist/aos.css";
 
 import Banner from "./Banner";
 const Work = () => {
-  const [bgd, setBgd] = useState("light");
+  const [bgd, setBgd] = useState("Dark");
   const [toggle, setToggle] = useState("");
   const [light, setLight] = useState("");
 
