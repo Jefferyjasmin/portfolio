@@ -71,10 +71,10 @@ const Work = () => {
   return (
     <>
       <Banner />
-      <div className={`work ${bgd}`} id="/work">
+      <div className={`work ${bgd}`} id="projects">
         <div className="work_title">
           <h2> RECENT WORK</h2>
-          <p>Here are a few projects that I have worked on</p>
+
           <div className="navbar">
             <div className="nav_bar_container">
               <button
@@ -106,7 +106,7 @@ const Work = () => {
             }}
           >
             <div id="/developerconnect" className={`left ${bgd}`}>
-              <h4>Developer Connect</h4>
+              <h4>DEVELOPER CONNECT</h4>
               <img className="projectImage" src={project1} alt="" />
               <div className="middle">
                 <div className="middleContent">
@@ -200,7 +200,7 @@ const Work = () => {
             }}
           >
             <div id="/airbnbclone" className={`left ${bgd}`}>
-              <h4>AirBnb Clone</h4>
+              <h4>AIRBNB CLONE</h4>
               <img className="projectImage" src={AirBnb} alt="" />
               <div className="middle">
                 <div className="middleContent">

@@ -137,6 +137,25 @@ a{
 
 }
 /* animation */
+@media (max-width: 1275px) {
+ .banner_image h1 {
+ margin-left: 30px;
+  text-shadow: 10px 10px 5px #a3acc870;
+  animation: updown 3s linear infinite;
+     position: absolute;
+  top: 3%;
+ left: 12%;
+     font-size: 2rem;
+    }
+.banner_content h2 {
+            color: white;
+            position: absolute;
+            bottom: 0;
+            right: 4%;
+}
+    
+       
+}
 @media (max-width: 701px) {
 .containers{
     height: 100%;

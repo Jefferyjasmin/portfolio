@@ -13,8 +13,8 @@
 
 .contact .contactForm {
     position: relative;
-
     margin-top: 20px;
+    width: 90%;
 }
 
 .contact_input {
@@ -71,12 +71,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+    
     }
 
     .contact_input input[type=submit],
     textarea {
         width: 100% !important;
+    }
+
+    .button{
+        height: 100%;
     }
 }
 

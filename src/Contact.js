@@ -65,7 +65,7 @@ const Contact = ({ bgd, lightOrDark }) => {
           <div className="col100 send ">
             <input
               style={{ textAlign: "center" }}
-              className="btn btn-primary"
+              className="btn btn-primary button"
               type="submit"
               value="send"
             />

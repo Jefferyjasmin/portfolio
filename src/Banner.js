@@ -55,13 +55,13 @@ const Banner = () => {
             <div className={`banner_content `}>
               <h2>{text}</h2>
               <h3 className={`left_content `}>
-                Hi, My name is Jeffery Jasmin
+                Jeffery Jasmin,
                 <p style={{ marginTop: "20px", fontSize: "1rem" }}>
                   I create interfaces and experiences, love solving real world
                   problems, while bringing ideas to UI
                 </p>
               </h3>{" "}
-              <span>Front End Develpoment |</span>
+              <span>Front End Developemnt |</span>
               <span> Back End Develpoment |</span>
               <span> FullStack Develpoment</span>
               <div className="banner_right">
@@ -75,6 +75,9 @@ const Banner = () => {
                     {" "}
                     Resume
                   </a>
+                </button>
+                <button className="Resume btn btn-primary ">
+                  <a href="#projects"> Projects</a>
                 </button>
 
                 <button className="btn btn-primary Github">
