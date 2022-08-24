@@ -12,8 +12,8 @@ const Banner = () => {
     "FullStack Engineer",
   ];
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const period = 2000;
+  const [delta, setDelta] = useState(10);
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -34,12 +34,12 @@ const Banner = () => {
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
+    // if (isDeleting) {
+    //   setDelta((prevDelta) => prevDelta / 2);
+    // }
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setDelta(period);
+      // setDelta(period);
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
@@ -67,7 +67,7 @@ const Banner = () => {
               <div className="banner_right">
                 <button className="Resume btn btn-primary ">
                   <a
-                    href="https://drive.google.com/file/d/1vQPccEAC9yl0LmWbHJchmQtGYN4kT5JK/view?usp=sharing"
+                    href="https://app.flowcv.com/resume-feedback/6Fot7irm50dw"
                     target="_blank"
                     without
                     rel="noreferrer"
